@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol TrafficLightViewDelegate: NSObjectProtocol {
+    func displayTrafficLight(description:(String))
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
